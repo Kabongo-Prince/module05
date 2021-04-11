@@ -1,0 +1,36 @@
+.container {
+  display: grid;
+  grid-template: 100px auto 100px / 30fr 70fr;
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer";
+  gap: 10px;
+  border: 3px solid lightgrey;
+  height: 100vh;
+}
+
+.box {
+  background: gold;
+}
+
+.box-one {
+  grid-area: header;
+  background-color: hsl(335, 82%, 86%);
+}
+
+.box-two {
+  grid-area: sidebar;
+  background-color: hsl(187, 61%, 79%);
+  min-width: auto;
+  max-width: 150px;
+}
+
+.box-three {
+  grid-area: main;
+  background-color: hsl(23, 83%, 82%);
+}
+.box-four {
+  grid-area: footer;
+  background-color: hsl(100, 41%, 76%);
+}
